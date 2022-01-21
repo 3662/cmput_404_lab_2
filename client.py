@@ -21,6 +21,7 @@ s.connect((host, port))
 
 # send GET request
 s.sendall(f'GET / HTTP/1.0\r\nHost: www.google.com\r\n\r\n'.encode())
+s.shutdown(socket.SHUT_WR)
 
 # received data from the socket
 data = b""
