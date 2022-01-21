@@ -28,9 +28,16 @@ s.listen(1)
 while True:
     conn, addr = s.accept()
 
+    # output info about what is connected to the server socket
+    print("Connection:", conn)
+
     # received data
     data = conn.recv(bufsize)
 
+    # output what is sent to this server
+    print("Received data:", data)
+
     # echo data back 
     conn.sendall(data)
+    
     conn.close()

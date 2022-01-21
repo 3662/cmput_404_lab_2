@@ -1,0 +1,25 @@
+Lab 2
+
+Question 1:
+By setting the "type" attribute of the socket instance to "SOCK_STREAM" 
+(default when instantiating):
+socket.socket(type=socket.SOCK_STREAM) or socket.socket()
+
+Question 2:
+A server is bind to a port and listens for connections from clientswhile a 
+client connects to a listening server and can make requests
+
+Question 3:
+By using the socket method setsockopt()
+
+Question 4:
+A file descriptor or "fd" e.g. 4
+The family of protocols e.g. AF_INET
+The type of communication between the endpoints e.g. SOCK_STREAM
+A protocol e.g. 0
+The address of the client e.g. ('127.0.0.1', 34602)
+
+Question 5:
+b''
+
+Question 6:
