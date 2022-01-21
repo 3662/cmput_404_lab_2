@@ -33,6 +33,8 @@ def handle_connection(conn, addr):
 
         response += temp
 
+    client_socket.close()
+
     print("Redirecting response from {} to {}".format(HOST_CLIENT, addr))
     conn.sendall(response)
     conn.shutdown(socket.SHUT_WR)
